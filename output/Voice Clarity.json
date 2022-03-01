@@ -1,11 +1,5 @@
 {
     "output": {
-        "autogain": {
-            "input-gain": 0.0,
-            "output-gain": 3.9,
-            "reference": "Geometric Mean",
-            "target": -17.39999999999992
-        },
         "blocklist": [],
         "equalizer": {
             "input-gain": 0.0,
@@ -219,7 +213,6 @@
             "split-channels": false
         },
         "plugins_order": [
-            "autogain",
             "equalizer"
         ]
     }
