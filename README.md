@@ -1,6 +1,6 @@
 # EasyEffects Presets
 
-To install go to `~/.config/easyeffects` and clone the repository presets `git clone git@github.com:josevictorferreira/.easyeffects.git .` 
+To install go to `~/.config/easyeffects` and clone the repository presets `git clone https://github.com/josevictorferreira/.easyeffects.git .` 
 
 ## My Current Presets
 
