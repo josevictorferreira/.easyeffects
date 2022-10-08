@@ -5,6 +5,8 @@
             "attack": 20.0,
             "boost-amount": 6.0,
             "boost-threshold": -72.0,
+            "bypass": false,
+            "dry": -100.0,
             "hpf-frequency": 10.0,
             "hpf-mode": "off",
             "input-gain": 0.0,
@@ -16,7 +18,7 @@
             "output-gain": 0.0,
             "ratio": 4.0,
             "release": 100.0,
-            "release-threshold": -120.0,
+            "release-threshold": -100.0,
             "sidechain": {
                 "lookahead": 0.0,
                 "mode": "RMS",
@@ -25,9 +27,11 @@
                 "source": "Middle",
                 "type": "Feed-forward"
             },
-            "threshold": -12.0
+            "threshold": -12.0,
+            "wet": 0.0
         },
         "deesser": {
+            "bypass": false,
             "detection": "RMS",
             "f1-freq": 6000.0,
             "f1-level": 0.0,
@@ -44,6 +48,7 @@
             "threshold": -18.0
         },
         "filter": {
+            "bypass": false,
             "frequency": 80.0,
             "inertia": 20.0,
             "input-gain": 0.0,
@@ -51,25 +56,13 @@
             "output-gain": 0.0,
             "resonance": -3.0
         },
-        "gate": {
-            "attack": 5.0,
-            "detection": "RMS",
-            "input-gain": 0.0,
-            "knee": 9.0,
-            "makeup": 0.0,
-            "output-gain": 0.0,
-            "range": -12.0,
-            "ratio": 2.0,
-            "release": 100.0,
-            "stereo-link": "Average",
-            "threshold": -18.0
-        },
         "limiter": {
             "alr": false,
             "alr-attack": 5.0,
             "alr-knee": 0.0,
             "alr-release": 50.0,
             "attack": 5.0,
+            "bypass": false,
             "dithering": "None",
             "external-sidechain": false,
             "gain-boost": true,
@@ -84,7 +77,6 @@
             "threshold": -1.0
         },
         "plugins_order": [
-            "gate",
             "compressor",
             "filter",
             "deesser",
@@ -92,6 +84,7 @@
             "limiter"
         ],
         "rnnoise": {
+            "bypass": false,
             "input-gain": 0.0,
             "model-path": "",
             "output-gain": 0.0
